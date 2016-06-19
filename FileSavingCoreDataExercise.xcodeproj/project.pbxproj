@@ -13,6 +13,11 @@
 		9FCB081F1D16B9B200641C29 /* FileSavingCoreDataExercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB081D1D16B9B200641C29 /* FileSavingCoreDataExercise.xcdatamodeld */; };
 		9FCB08211D16B9B200641C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCB08201D16B9B200641C29 /* Assets.xcassets */; };
 		9FCB08241D16B9B200641C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCB08221D16B9B200641C29 /* LaunchScreen.storyboard */; };
+		9FCB082C1D16B9DD00641C29 /* Poem.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9FCB082B1D16B9DD00641C29 /* Poem.txt */; };
+		9FCB082F1D16C1C200641C29 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB082D1D16C1C200641C29 /* Entity+CoreDataProperties.swift */; };
+		9FCB08301D16C1C200641C29 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB082E1D16C1C200641C29 /* Entity.swift */; };
+		9FCB08321D16C4B400641C29 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB08311D16C4B400641C29 /* BookTableViewController.swift */; };
+		9FCB08341D16C91D00641C29 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB08331D16C91D00641C29 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		9FCB08201D16B9B200641C29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FCB08231D16B9B200641C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FCB08251D16B9B200641C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FCB082B1D16B9DD00641C29 /* Poem.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Poem.txt; sourceTree = "<group>"; };
+		9FCB082D1D16C1C200641C29 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9FCB082E1D16C1C200641C29 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		9FCB08311D16C4B400641C29 /* BookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
+		9FCB08331D16C91D00641C29 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				9FCB08221D16B9B200641C29 /* LaunchScreen.storyboard */,
 				9FCB08251D16B9B200641C29 /* Info.plist */,
 				9FCB081D1D16B9B200641C29 /* FileSavingCoreDataExercise.xcdatamodeld */,
+				9FCB082B1D16B9DD00641C29 /* Poem.txt */,
+				9FCB082D1D16C1C200641C29 /* Entity+CoreDataProperties.swift */,
+				9FCB082E1D16C1C200641C29 /* Entity.swift */,
+				9FCB08311D16C4B400641C29 /* BookTableViewController.swift */,
+				9FCB08331D16C91D00641C29 /* AddViewController.swift */,
 			);
 			path = FileSavingCoreDataExercise;
 			sourceTree = "<group>";
@@ -128,6 +143,7 @@
 				9FCB08241D16B9B200641C29 /* LaunchScreen.storyboard in Resources */,
 				9FCB08211D16B9B200641C29 /* Assets.xcassets in Resources */,
 				9FCB081C1D16B9B200641C29 /* Main.storyboard in Resources */,
+				9FCB082C1D16B9DD00641C29 /* Poem.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCB08191D16B9B200641C29 /* ViewController.swift in Sources */,
+				9FCB08301D16C1C200641C29 /* Entity.swift in Sources */,
+				9FCB08341D16C91D00641C29 /* AddViewController.swift in Sources */,
 				9FCB081F1D16B9B200641C29 /* FileSavingCoreDataExercise.xcdatamodeld in Sources */,
+				9FCB082F1D16C1C200641C29 /* Entity+CoreDataProperties.swift in Sources */,
+				9FCB08321D16C4B400641C29 /* BookTableViewController.swift in Sources */,
 				9FCB08171D16B9B200641C29 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
