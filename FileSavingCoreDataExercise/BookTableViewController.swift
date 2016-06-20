@@ -18,7 +18,7 @@ class BookTableViewController: UITableViewController {
     let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
-    var bookList: [Entity] = [Entity]()
+    var bookList: [Book] = [Book]()
     
     
     
@@ -62,7 +62,7 @@ class BookTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // Configure the cell...
         let cell = UITableViewCell(style: .Subtitle, reuseIdentifier: "Cell")
-        cell.textLabel?.text = bookList[indexPath.row].type
+        cell.textLabel?.text = bookList[indexPath.row].title
         cell.detailTextLabel?.text = bookList[indexPath.row].author
         
         return cell
@@ -71,12 +71,12 @@ class BookTableViewController: UITableViewController {
     func reloadData() {
         
         do {
-            let fetchRequest = NSFetchRequest(entityName: "Entity")
+            let fetchRequest = NSFetchRequest(entityName: "Book")
             let sortDescriptor = NSSortDescriptor(key: "isbn", ascending: true)
             let sortDescriptor1 = NSSortDescriptor(key: "author", ascending: true)
             fetchRequest.sortDescriptors = [sortDescriptor, sortDescriptor1]
             
-            bookList = try managedObjectContext.executeFetchRequest(fetchRequest) as! [Entity]
+            bookList = try managedObjectContext.executeFetchRequest(fetchRequest) as! [Book]
             bookListTable.reloadData()
         } catch {
             print(error)

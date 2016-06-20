@@ -19,7 +19,7 @@ class AddViewController: UIViewController {
     @IBOutlet weak var newPrice: UITextField!
     
     
-    var updateBook: Entity?
+    var updateBook: Book?
     
     
     let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -39,7 +39,7 @@ class AddViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         if let book = updateBook {
             newIsbn.text = book.isbn
-            newType.text = book.type
+            newType.text = book.title
             newAuthor.text = book.author
             newPrice.text = "\(book.price!)"
         }
@@ -65,14 +65,14 @@ class AddViewController: UIViewController {
         
         
         if updateBook == nil {
-            updateBook = NSEntityDescription.insertNewObjectForEntityForName("Entity", inManagedObjectContext: managedObjectContext) as? Entity
+            updateBook = NSEntityDescription.insertNewObjectForEntityForName("Book", inManagedObjectContext: managedObjectContext) as? Book
         }
         
         
        
         updateBook!.isbn = newIsbn.text
         updateBook!.author = newAuthor.text
-        updateBook!.type = newType.text
+        updateBook!.title = newType.text
         
        
         let formatter = NSNumberFormatter()
